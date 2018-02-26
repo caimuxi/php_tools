@@ -2,6 +2,7 @@
 
 //把用户输入存到php文件内
 $code = $_GET['str'];
+echo $code;exit;
 //$code = '$array = array(1,2,3);print_r($array);';
 $code = "<?php ".$code." ?>";
 if(!$code) exit('请输入要执行php的代码');
